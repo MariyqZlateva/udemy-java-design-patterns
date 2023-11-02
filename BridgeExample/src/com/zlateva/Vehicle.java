@@ -32,7 +32,7 @@ class Bike extends Vehicle{
 
     @Override
     public void manufacture() {
-        System.out.println("Car");
+        System.out.println("Bike");
         workshop1.work();
         workshop2.work();
     }
