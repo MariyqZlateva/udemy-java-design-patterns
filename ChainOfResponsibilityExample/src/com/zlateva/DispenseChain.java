@@ -41,7 +41,7 @@ class Dollar20Dispenser implements DispenseChain {
 
     @Override
     public void dispense(Currency cur) {
-        if (cur.getAmount()<20){
+        if (cur.getAmount() < 20) {
             this.chain.dispense(new Currency(cur.getAmount()));
         }
         if (cur.getAmount() >= 20) {
@@ -78,6 +78,6 @@ class Dollar10Dispenser implements DispenseChain {
 //            } else {
 //                this.chain.dispense(cur);
             }
-            }
         }
     }
+}
